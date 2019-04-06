@@ -43,3 +43,10 @@ span.mand{
 .row {
 	padding-bottom: 6px !important;
 }
+
+.center {
+  margin: auto;
+  width: 60%;
+  margin-top: 20px;
+  padding: 10px;
+}

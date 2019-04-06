@@ -4,11 +4,12 @@ import "../assets/styles/Common.css";
 import "react-toastify/dist/ReactToastify.css";
 import "../assets/styles/toastify.css";
 import { ToastContainer } from "react-toastify";
+import "../assets/styles/Common.css";
 
 class Layout extends React.Component {
 	render() {
 		return (
-			<div>
+			<div className="center">
 					{
 						loadComponent
 					}
