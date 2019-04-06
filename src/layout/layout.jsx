@@ -5,14 +5,18 @@ import "react-toastify/dist/ReactToastify.css";
 import "../assets/styles/toastify.css";
 import { ToastContainer } from "react-toastify";
 import "../assets/styles/Common.css";
+import {NavBar} from "../Components/index";
 
 class Layout extends React.Component {
 	render() {
 		return (
 			<div className="center">
+				<NavBar/>
+				<div style={{marginTop:"10px"}}>
 					{
 						loadComponent
 					}
+				</div>
 				<ToastContainer hideProgressBar={true} closeOnClick={true} autoClose={2500} />
 			</div>
 			// <div>

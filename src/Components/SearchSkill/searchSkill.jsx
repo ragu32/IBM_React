@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
+import "../../assets/styles/Common.css"
 
 const Search = props => {
     return(
@@ -10,11 +11,10 @@ const Search = props => {
                 </div>
                 <input 
                     type="text" 
-                    class="form-control" 
+                    class="cus-height form-control" 
                     placeholder="Username" 
                     aria-label="Username" 
                     aria-describedby="basic-addon1"
-                    style={{height:"38px"}} 
                 />
             </div>
         </div>

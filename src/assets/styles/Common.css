@@ -50,3 +50,8 @@ span.mand{
   margin-top: 20px;
   padding: 10px;
 }
+
+
+input.form-control{
+  height: 38px !important;
+}

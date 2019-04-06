@@ -22,4 +22,6 @@ class SkillSet extends React.Component{
     }
 };
 
+
+
 export default SkillSet;
