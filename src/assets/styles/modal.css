@@ -1,0 +1,24 @@
+.modal-header--custom {
+    height: 46px;
+    width: 100%;
+    background-color: #4A90E2;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px 20px;
+}
+
+.modal-header--custom h5 {
+    width: 100%;
+}
+
+.modal-header--custom label{
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 19px;
+}
+
+
+
+
+

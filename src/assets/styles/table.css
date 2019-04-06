@@ -1,0 +1,74 @@
+.table--custom table {
+	margin-bottom: 0px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2) !important;	
+}
+
+.table--custom table th {
+	padding: 5px 0px 5px 0px;
+	background-color: rgba(0, 0, 0, 0.14);
+}
+
+.table--custom table tbody {
+	cursor: pointer;
+}
+/* 
+.table--custom table tbody td {
+	font-size: 12px;
+	line-height: 14px;
+} */
+
+.table--custom table th label {
+	color: black;
+	/* font-size: 12px; */
+	font-weight: 500;
+	line-height: 14px;
+	line-height: 16px;
+	padding-left: 10px;
+}
+
+.table--custom  ul.pagination {
+	float:right;
+}
+
+.table-value-1 {
+	/* width: 118px; */
+	color: #000B14;
+	font-weight: 500;
+}
+
+.table-value-2 {
+	color: #000B14;
+	/* word-break: break-all;
+    white-space: normal; */
+    text-overflow: ellipsis;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.wrap-value{
+    word-break: break-all;
+	white-space: normal;
+}
+
+.normal-white-space{
+    white-space: normal;
+}
+
+.is-ios * {
+    cursor: pointer;
+}
+
+
+td.table-value-2:focus {
+    outline-color: transparent;
+}              
+
+
+.pointercursor{
+    cursor: pointer;
+}
+
+.table--custom table td a {
+	color: black;
+
+}
