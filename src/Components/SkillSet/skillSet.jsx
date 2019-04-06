@@ -4,6 +4,10 @@ import FormGroup from '@material-ui/core/FormGroup';
 import "./style.css";
 
 class SkillSet extends React.Component{
+
+    componentDidMount(){
+
+    }
     
     render(){
         let sample = [1,3,3,4,3,3];

@@ -1,6 +1,5 @@
 import { Helper } from "../../utilities/helper";
-//set the initial-state value here.
-//This will be loaded by react when at @@react/init (initialization).
+
 export const skillSetData = {
     platForm : [],
     programingLanguage : [],
@@ -20,8 +19,7 @@ export const skillSetType = {
     setDataStorage : "SET_DATA"
 };
 
-//set the updated-state to existing-state(previous-state).
-//This will be executed by respective reducer(registration/patientAdd/reducer) when at even dispatched.
+
 export const setState = {
 	platForm:(state,value) => {
 		return{
@@ -61,7 +59,7 @@ export const setState = {
 	}
 };
 
-//This actions will be used by respective boilerplate(registration/patientAdd/patientAdd.jsx) when at specific even dispatched from UI.
+
 export const actions = {
     setPlatForm : value => Helper.actionReturnType(skillSetType.setPlatForm,value),
     setProgramingLang : value => Helper.actionReturnType(skillSetType.setProgramingLang,value),

@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import { SkillSet } from "../index";
+import { apiHelper } from "./scripts";
 
 const styles = theme => ({
   root: {
@@ -37,6 +38,22 @@ class SkillsExp extends React.Component {
       expanded: expanded ? panel : false,
     });
   };
+
+  componentDidMount(){
+    let response = apiHelper.getSkillCategory();
+    response.then(
+      result => this.successResponse(result), 
+      error => this.failureResponse(error)
+    );
+  }
+
+  successResponse(result){
+    console.log(result);
+  }
+
+  failureResponse(error){
+    console.log(error);
+  }
 
   render() {
     const { classes } = this.props;
