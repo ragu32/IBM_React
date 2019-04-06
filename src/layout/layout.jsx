@@ -11,7 +11,11 @@ class Layout extends React.Component {
 	render() {
 		return (
 			<div className="center">
-				<NavBar/>
+				{
+					window.location && 
+					window.location.pathname !== "/" && 
+					<NavBar/>
+				}
 				<div style={{marginTop:"10px"}}>
 					{
 						loadComponent

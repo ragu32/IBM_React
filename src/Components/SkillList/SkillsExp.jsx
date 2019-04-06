@@ -10,6 +10,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import { SkillSet } from "../index";
 import { apiHelper } from "./scripts";
+import { actions } from "./action";
 
 const styles = theme => ({
   root: {
@@ -40,6 +41,7 @@ class SkillsExp extends React.Component {
   };
 
   componentDidMount(){
+    debugger
     let response = apiHelper.getSkillCategory();
     response.then(
       result => this.successResponse(result), 
@@ -48,7 +50,12 @@ class SkillsExp extends React.Component {
   }
 
   successResponse(result){
-    console.log(result);
+    setTimeout(() => {
+      
+    }, 2000);
+    debugger
+    console.log("aa",result);
+    this.props.setSkillCategory(result);
   }
 
   failureResponse(error){
@@ -59,9 +66,9 @@ class SkillsExp extends React.Component {
     const { classes } = this.props;
     const { expanded } = this.state;
 
-    const {skillCategoryData} = this.props;
+    const {skillCategoryData, skillSetData} = this.props;
 
-    console.log(this.props)
+    console.log("__",this.props)
     return (
       <div className={classes.root}>
       {
@@ -73,7 +80,7 @@ class SkillsExp extends React.Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>
-              <SkillSet/>
+              <SkillSet skills={skillSetData} skillId={skillCategory.id}/>
               </Typography>
             </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -96,13 +103,13 @@ const mapStateToProps = (state) => ({
   skillSetData : state.skillSetData
 });
 
-// const mapDispatchToProps = (dispatch) => {
-// 	return {
-// 		setPrimaryCareValidationIndicator: value => dispatch(actions.setPrimaryCareValidationIndicator(value))
-// 	};
-// };
+const mapDispatchToProps = (dispatch) => {
+	return {
+		setSkillCategory: value => dispatch(actions.setSkillCategory(value))
+	};
+};
 
 
 const SkillWrapper = withStyles(styles)(SkillsExp);
 
-export default connect(mapStateToProps, null)(SkillWrapper);
+export default connect(mapStateToProps, mapDispatchToProps)(SkillWrapper);

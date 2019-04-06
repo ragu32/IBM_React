@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {form, FormGroup, InputGroup, FormControl, Button } from 'react-bootstrap'
 import './Login.css'
-import {browserHistory} from 'react-router'
+import {browserHistory} from 'react-router';
+import {Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 export default class Login extends Component{
 
@@ -23,7 +25,11 @@ export default class Login extends Component{
                                 inputRef={(ref) => {this.password = ref}}/>
                             </InputGroup>
                     </FormGroup>
-                    <Button><link to={'/skills'}></link>Login</Button>
+                    <Link to={"/skills"} tabIndex="-1">
+							<button className="btn btn-primary">
+                                Login
+                            </button>
+                    </Link>
                 </form>
             </div>
         )

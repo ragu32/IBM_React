@@ -1,6 +1,8 @@
 import { createHashHistory } from "history";
 import queryString from "query-string";
 
+const endPointURL = "http://demo4531246.mockable.io"
+
 const replacer = function (key, value) {
 	// Filtering in properties
 	if (value === undefined) {
@@ -30,7 +32,7 @@ export function Http(request) {
 			}
 		}
 
-		let endPoint = request.endPoint ? request.endPoint : process.env.REACT_APP_API_ENDPOINT;
+		let endPoint = request.endPoint ? request.endPoint : endPointURL;
 
 		let fetchUrl = endPoint + request.url;
 

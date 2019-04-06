@@ -1,7 +1,7 @@
 import { Http} from "../../utilities/api/http";
 
 const request = {
-	skillCategory: { url: "api/skillCategory", method: "GET"}
+	skillCategory: { url: "/skill/skillCategory", method: "GET"}
 };
 
 
