@@ -1,6 +1,11 @@
-import {SkillItem,Search,SkillSet} from "../Components/index"
+import {SkillItem,Search} from "../Components/index"
+import SkillsExp from "../Components/SkillList/SkillsExp";
+import Login from "../Components/Login/Login";
 
 export default [
-	{path : "/" , component : SkillItem},
-	{path : "/search" , component : SkillSet}
+	{path : "/" , component : SkillsExp},
+	{path : "/login" , component : Login},
+	{path : "/search" , component : Search},
+	{path: "/skills", component: SkillsExp},
+
 ];

@@ -1,0 +1,23 @@
+
+
+span.input-group {
+    width: 500px !important;
+    font-family: "raleway-bold", sans-serif;
+
+}
+
+input.form-control{
+    height: 30px !important;
+    width: 300px !important;
+    font-family: "raleway-bold", sans-serif;
+}
+
+.btn{
+    height: 30px!important;
+    font-family: "raleway-bold", sans-serif;
+}
+
+p{
+    font-family: "raleway-bold", sans-serif !important;
+    size: 10px!important;
+}
