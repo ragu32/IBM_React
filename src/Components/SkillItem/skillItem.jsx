@@ -15,7 +15,7 @@ const styles = {
     color: green[600],
     '&$checked': {
       color: green[500],
-    },
+    }
   },
   checked: {},
 };

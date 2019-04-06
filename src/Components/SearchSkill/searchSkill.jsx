@@ -8,7 +8,14 @@ const Search = props => {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">search</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Username" 
+                    aria-label="Username" 
+                    aria-describedby="basic-addon1"
+                    style={{height:"38px"}} 
+                />
             </div>
         </div>
     )

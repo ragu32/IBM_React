@@ -7,6 +7,8 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+import { SkillSet } from "../index";
+
 const styles = theme => ({
   root: {
     width: '100%',
@@ -51,8 +53,7 @@ class SkillsExp extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-              maximus est, id dignissim quam.
+             <SkillSet/>
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
